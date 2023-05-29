@@ -129,12 +129,14 @@
   <ItemGroup>
     <ClCompile Include="JsonService.cpp" />
     <ClCompile Include="WeatherService.cpp" />
+    <ClCompile Include="XmlService.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="json.hpp" />
     <ClInclude Include="JsonService.h" />
     <ClInclude Include="Service.h" />
     <ClInclude Include="Weather.h" />
+    <ClInclude Include="XmlService.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

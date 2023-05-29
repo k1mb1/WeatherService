@@ -1,5 +1,6 @@
 #pragma once
 #include<string>
+#include<iostream>
 
 using namespace std;
 
@@ -17,12 +18,15 @@ public:
 	Weather(string city, double lon,
 		double lat, double temperature, string weather, double windSpeed, int clouds) {
 		this->city = city;
+		this->lon = lon;
 		this->lat = lat;
 		this->temperature = temperature;
 		this->weather = weather;
 		this->windSpeed = windSpeed;
 		this->clouds = clouds;
-
 	};
+	void print() {
+		cout << city << " " << lon << " " << lat << " " << temperature << " " << weather << " " << windSpeed << " " << clouds << endl;
+	}
 };
 
